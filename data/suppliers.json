@@ -1,0 +1,42 @@
+[
+  {
+    "supplier_id": "SUP-001",
+    "supplier_name": "ThermalVision Optics",
+    "interface_name": "Payload Telemetry Bundle",
+    "protocol": "CAN",
+    "status": "validated",
+    "owning_repo": "interface-control-toolkit",
+    "delivery_gate": "ICD_FREEZE",
+    "documents": ["ICD-THERMAL-01", "TEST-REPORT-THERMAL-02"]
+  },
+  {
+    "supplier_id": "SUP-002",
+    "supplier_name": "Orbital Relay Services",
+    "interface_name": "Disaster Imagery Relay Feed",
+    "protocol": "S-Band",
+    "status": "active",
+    "owning_repo": "satellite-power-budget-simulator",
+    "delivery_gate": "PDR",
+    "documents": ["LINK-BUDGET-REL-04", "OPS-CONCEPT-REL-02"]
+  },
+  {
+    "supplier_id": "SUP-003",
+    "supplier_name": "Autonomy Navigation Labs",
+    "interface_name": "Route Update Exchange",
+    "protocol": "MQTT",
+    "status": "validated",
+    "owning_repo": "trade-study-engine",
+    "delivery_gate": "TRR",
+    "documents": ["ICD-NAV-07", "SIM-RESULT-NAV-03"]
+  },
+  {
+    "supplier_id": "SUP-004",
+    "supplier_name": "Mission Review Services",
+    "interface_name": "Release Evidence Package",
+    "protocol": "HTTPS",
+    "status": "planned",
+    "owning_repo": "release-readiness-command-center",
+    "delivery_gate": "RELEASE_BOARD",
+    "documents": ["EVIDENCE-TEMPLATE-01", "REVIEW-CHECKLIST-02"]
+  }
+]

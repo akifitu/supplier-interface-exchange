@@ -1,0 +1,5 @@
+supplier_id,supplier_name,interface_name,protocol,status,owning_repo,delivery_gate,document_count
+SUP-001,ThermalVision Optics,Payload Telemetry Bundle,CAN,validated,interface-control-toolkit,ICD_FREEZE,2
+SUP-002,Orbital Relay Services,Disaster Imagery Relay Feed,S-Band,active,satellite-power-budget-simulator,PDR,2
+SUP-003,Autonomy Navigation Labs,Route Update Exchange,MQTT,validated,trade-study-engine,TRR,2
+SUP-004,Mission Review Services,Release Evidence Package,HTTPS,planned,release-readiness-command-center,RELEASE_BOARD,2

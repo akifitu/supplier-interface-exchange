@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supplier-interface-exchange"
+version = "0.1.0"
+description = "Supplier-facing interface exchange and delivery readiness hub for a systems engineering portfolio."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+authors = [
+  { name = "Akif" }
+]
+keywords = [
+  "systems-engineering",
+  "interfaces",
+  "suppliers",
+  "portfolio"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.scripts]
+supplier-interface-exchange = "supplier_interface_exchange.cli:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supplier Interface Exchange</title>
+  <style>
+    :root {
+      --bg: #f3f1ee;
+      --panel: rgba(255,255,255,0.9);
+      --ink: #2e2822;
+      --muted: #6f655c;
+      --accent: #7c3aed;
+      --line: rgba(46,40,34,0.12);
+      --shadow: 0 18px 40px rgba(46,40,34,0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #f7f3ef, #e9e1d8);
+    }
+    main {
+      width: min(1100px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 28px 0 54px;
+    }
+    .hero, section, .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      border-radius: 24px;
+    }
+    .hero {
+      padding: 28px;
+      background: linear-gradient(135deg, rgba(124,58,237,0.95), rgba(99,102,241,0.95));
+      color: #fcfbff;
+    }
+    h1, h2 {
+      margin: 0 0 12px;
+      font-family: "Georgia", serif;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 18px 0;
+    }
+    .card {
+      padding: 20px;
+      min-height: 116px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card span {
+      color: var(--muted);
+      text-transform: uppercase;
+      font-size: 0.84rem;
+      letter-spacing: 0.07em;
+    }
+    .card strong {
+      color: var(--accent);
+      font-size: 1.9rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    section {
+      padding: 22px;
+      overflow: hidden;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.94rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1>Supplier Interface Exchange</h1>
+      <p>Supplier-facing interface and delivery-gate governance for a systems engineering portfolio.</p>
+    </section>
+    <div class="metrics"><article class="card"><span>Suppliers</span><strong>4</strong></article>
+<article class="card"><span>Interfaces</span><strong>4</strong></article>
+<article class="card"><span>Validated</span><strong>2</strong></article>
+<article class="card"><span>Delivery Gates</span><strong>4</strong></article></div>
+    <div class="grid">
+      <section>
+        <h2>Supplier Register</h2>
+        <table><thead><tr><th>supplier name</th><th>interface name</th><th>protocol</th><th>status</th><th>owning repo</th><th>delivery gate</th></tr></thead><tbody><tr><td>ThermalVision Optics</td><td>Payload Telemetry Bundle</td><td>CAN</td><td>validated</td><td>interface-control-toolkit</td><td>ICD_FREEZE</td></tr><tr><td>Orbital Relay Services</td><td>Disaster Imagery Relay Feed</td><td>S-Band</td><td>active</td><td>satellite-power-budget-simulator</td><td>PDR</td></tr><tr><td>Autonomy Navigation Labs</td><td>Route Update Exchange</td><td>MQTT</td><td>validated</td><td>trade-study-engine</td><td>TRR</td></tr><tr><td>Mission Review Services</td><td>Release Evidence Package</td><td>HTTPS</td><td>planned</td><td>release-readiness-command-center</td><td>RELEASE_BOARD</td></tr></tbody></table>
+      </section>
+      <section>
+        <h2>Delivery Gates</h2>
+        <table><thead><tr><th>delivery gate</th><th>interface count</th></tr></thead><tbody><tr><td>ICD_FREEZE</td><td>1</td></tr><tr><td>PDR</td><td>1</td></tr><tr><td>RELEASE_BOARD</td><td>1</td></tr><tr><td>TRR</td><td>1</td></tr></tbody></table>
+      </section>
+      <section>
+        <h2>Warnings</h2>
+        <ul><li>None</li></ul>
+      </section>
+      <section>
+        <h2>Errors</h2>
+        <ul><li>None</li></ul>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
