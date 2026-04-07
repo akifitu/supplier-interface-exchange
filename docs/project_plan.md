@@ -36,4 +36,4 @@
 - [x] create a realistic exchange dataset
 - [x] implement validation and exporter logic
 - [x] add regression tests
-- [ ] publish the repository
+- [x] publish the repository
